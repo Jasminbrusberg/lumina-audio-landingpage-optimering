@@ -1,0 +1,494 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+
+
+
+
+
+/* venstre (menu) */
+.menu-venstre {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-venstre span {
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+}
+
+/* Center logo */
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+
+
+/* Nemt reset så du ikke får hvide kanter */
+body {
+  margin: 0;
+}
+
+/* HERO split */
+.hero {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 520px;          
+  overflow: hidden;
+}
+
+/* hver side (50/50) */
+.hero-col {
+  flex: 1;
+  height: 100%;
+}
+
+/* billedet fylder hele boksen */
+.hero-col img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+/* hver side (50/50) */
+.hero-col1 {
+  flex: 1;
+  height: 100%;
+}
+
+/* billedet fylder hele boksen */
+.hero-col1 img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+
+ 
+
+
+/* lodret linje i midten */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* LUMINA tekst ovenpå */
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  font-size: clamp(44px, 7vw, 96px);
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+
+
+
+
+
+.product{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 80px 80px;
+  background: #fff;
+}
+
+/* venstre billede */
+.product-media img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* højre kolonne */
+.product-info{
+  max-width: 520px;
+}
+
+.product-title{
+  margin: 0 0 18px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.product-text{
+  margin: 0 0 26px;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 430px;
+}
+
+/* linjer + pris + farver */
+
+.product-meta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 14px 0;
+  margin: 20px 0 28px;
+}
+
+.pris{
+  font-size: 34px;
+  font-weight: 500;
+}
+
+/* farveprikker */
+.farver{
+  display: flex;
+  gap: 14px;
+}
+
+.swatch{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #222;
+  background: var(--c);
+  padding: 0;
+  cursor: pointer;
+}
+
+/* aktiv/hover look */
+.swatch:hover{
+  transform: scale(1.05);
+}
+
+.swatch:focus-visible{
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+/* knap */
+
+.add-to-cart{
+  width: 100%;
+  height: 64px;
+  border: none;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover{
+  opacity: 0.92;
+}
+
+/* mobil */
+@media (max-width: 900px){
+  .product{
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 40px 20px;
+  }
+  .product-info{
+    max-width: none;
+  }
+ 
+}
+
+
+
+
+.variants{
+  padding: 40px 60px 80px;
+  background: #fff;
+}
+
+.variant-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+/* de lyse “kort” */
+.variant-card{
+  background: #f2f0ed;
+  padding: 36px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* billederne */
+.variant-card img{
+  width: 150%;
+  max-width: 260px;   /* styrer størrelsen */
+  height: auto;
+  display: block;
+}
+
+/* responsiv */
+@media (max-width: 1100px){
+  .variant-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px){
+  .variants{ padding: 24px 16px 40px; }
+  .variant-grid{ grid-template-columns: 1fr; }
+}
+
+
+
+/* Baseline to ignore browsers default settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* MAIN */
+main article {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main article div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* PIC 8 */
+main article .class8 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}
+
+main article .class8 p {
+    padding-top: 10px;
+    text-align: start;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 1;
+    font-style: initial;
+    font-size: 17px;
+}
+
+main article .class8 img {
+    height: auto;
+    width: 650px;
+}
+
+main article div .wireless-8 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* PIC 9 */
+main article .class9 {
+    display: flex;
+    padding-left: 10px;
+}
+
+main article .class9 p {
+    text-align: start;
+    padding-top: 140px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 1;
+    font-style: initial;
+    font-size: 17px;  
+}
+
+main article .class9 img {
+    height: auto;   
+    width: 650px;
+}
+
+main article div .flexible-9 {
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+/* PIC 10 */
+main article .class10 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main article .class10 p {
+    text-align: start;
+    padding-top: 140px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 1;
+    font-style: initial;
+    font-size: 17px;  
+}
+
+main article .class10 img {
+    height: auto;
+    width: 700px;
+    padding-right: 10px;
+    padding-bottom: 200px;
+}
+
+main article div .nordic-10 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* NEED TO SOMEHOW PLACE THESE FLEXBOXES ON TOP OF EACH OHTER ! ! ! */
+
+
+/* FURTHER DESCRIPTION */
+article.second-description {
+    text-align: center;
+    max-width: 930px;
+    padding: 50px;
+    margin: 0 auto;  /* if this line is not here, "text-align: center;" centers inside of "max-width:665px;" */
+    line-height: 40px;
+    padding-bottom: 180px;
+}
+
+body article .description-heading {
+    font-size: 18px;
+    font-weight: 20;
+    font-style: initial;
+}
+
+body article .description {
+    font-size: 28px;
+    font-weight: 100;
+    font-style: initial;
+}
+
+
+
+/* TRUSTPILOT */
+section ul li .heart-icon {
+    width: auto;
+    height: 14px;
+    flex-shrink: 0;
+    padding-left: 22px;
+}
+
+section .trustpilot-heading {
+    font-weight: 520;
+    font-size: 28px;
+    font-style: initial;
+    padding-bottom: 10px;
+}
+
+body .trustpilot {
+    padding: 20px;
+    padding-left: 35px;
+    padding-bottom: 50px;
+}
+
+body section ul {
+    list-style: none;
+}
+
+body section a {
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+}
+
+body section ul li {
+    padding: 7px;
+    font-weight: 1;
+    font-size: 18;
+}
+
+
+
+/* FOOTER */
+footer nav.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #808080;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer nav div ul li a {
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+footer h4 {
+    margin-bottom: 5px;
+}
+
+footer nav .footer-h4 {
+    font-weight: 500;
+    font-size: 18px;
+    font-style: initial;
+    color: #DDDDDD;
+}
+
+footer nav div ul {
+    font-weight: 1;
+    font-size: 16px;
+}
