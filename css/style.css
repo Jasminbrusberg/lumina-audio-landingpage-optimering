@@ -436,6 +436,55 @@ background-color: var(--lightbackground-color);
     margin-top: 8px;
     }
     
+    /* styling af story sektione */
+.story {
+  display: flex;
+  align-items: center;
+  gap: 120px; /* mellemrum mellem tekst og billede */
+  padding: 80px 120px;
+  background-color: var(--lightbackground-color);
+}
+
+    /* venstre tekstområde */
+    .story-text-left {
+    /* flex: 1; billedet og teksten deler pladsen lige   */
+    flex: 1;
+    color: black;
+    }
+
+    /* lille tekst øverst */
+    .story-text-left h4 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    line-height: 50px;
+    margin: 0 0 10px 0;
+    }
+
+    /* stor overskrift */
+    .story-text-left h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 50;
+    }
+
+    /* brødtekst */
+    .story-text-left p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0;
+    }
+
+    /* billedområdet */
+    .story-image {
+    flex: 1;
+    margin: 0;
+    }
+
 
 
 
