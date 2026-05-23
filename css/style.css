@@ -216,6 +216,7 @@ body {
     .proof-item {
     text-align: center;
     }
+    
 
     /* størrelsen på ikonerne */
     .proof-icon {
@@ -372,6 +373,69 @@ background-color: var(--lightbackground-color);
     font-size: 28px;
     margin-left: 8px;
     }
+
+
+    /* styling af features sektionen */
+.features {
+    min-height: 40vh;
+    background-image: url("../img/features-background.png");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 40px 60px;
+    }
+
+     /* styling af lisents placering */
+    .feature-list {
+    list-style: none; /* fjerner punkterne */
+    margin: 0;
+    padding: 20px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    }
+
+    /* centrer teksten */
+    .features {
+    text-align: center;
+    color: white;
+    }
+
+    .features h2 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    margin: 0px;
+    padding: 10px;
+    line-height: 2;
+    }
+    
+    /* størrelsen på ikonerne */
+    .feature-icon {
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+    }
+
+    /* styling af h4 overskriften */
+    .feature-text h4 {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 4px;
+    }
+
+    /* styling af paragraf */
+    .feature-text p {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px;
+    }
+    
 
 
 
