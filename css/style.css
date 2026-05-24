@@ -654,32 +654,17 @@ background-color: var(--lightbackground-color);
     flex: 0 0 auto; /* betyder, at hvert billede beholder sin egen størrelse og ikke bliver mast sammen. */
     }
 
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
-}
 
     object-fit: cover;
     display: block;
     }
 
-.variant-card img{
-  width: 150%;
-  max-width: 260px;   /* styrer størrelsen */
-  height: auto;
     /* @keyframes laver selve animationen. */
     @keyframes autoScroll {
     from {
     }
 
-/* responsiv */
-@media (max-width: 1100px){
-  .variant-grid{ grid-template-columns: repeat(2, 1fr); }
-}
 
-@media (max-width: 600px){
-  .variants{ padding: 24px 16px 40px; }
-  .variant-grid{ grid-template-columns: 1fr; }
-}
 
 
 
