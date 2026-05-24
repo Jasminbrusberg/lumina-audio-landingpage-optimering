@@ -706,57 +706,87 @@ background-color: var(--lightbackground-color);
     /* img = selve billedet */
     /* @keyframes = animationen */
 
-
-
-
-
-
-
-    
-
-
-
-
-
-
-/* FOOTER */
-footer nav.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #808080;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 100px;
+.footer {
+background-color: var(--darkbackground-color);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items: flex-start;
+gap: 40px;
+padding: 32px 40px 50px 40px;
 }
 
-footer .column {
-    display: flex;
-    flex-direction: column;
+.footer-left {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-footer ul {
-    list-style: none;
+/* styling af venstre side af footeren */
+.footer-left img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 32px;
 }
 
-footer nav div ul li a {
-    text-decoration: none;
-    color: #DDDDDD;
+/* styler p i venstre side af footeren */
+.footer-left p {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 16px;
+  margin: 8px 0;
 }
 
-footer h4 {
-    margin-bottom: 5px;
+/* sociale medier placering */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
 }
 
-footer nav .footer-h4 {
-    font-weight: 500;
-    font-size: 18px;
-    font-style: initial;
-    color: #DDDDDD;
+/* størrelsen på sociale medier logo */
+.social-links img {
+  width: 40px;
+  height: 40px;
 }
 
-footer nav div ul {
-    font-weight: 1;
-    font-size: 16px;
+/* Footer-kolonner */
+.footer-column {
+  border-left: 1.5px solid #d1b48c;
+   padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 140px;
+}
+
+/* Overskrifter */
+.footer-column h2 {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 10px 0 20px 0;
+  letter-spacing: 0.5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+.footer-column a {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
 }
