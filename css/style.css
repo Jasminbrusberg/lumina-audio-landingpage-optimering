@@ -230,7 +230,7 @@ body {
     }
 
     /* styling af h4 overskriften */
-    .proof-item h4 {
+    .proof-item h3 {
     font-family: "Inria Sans", sans-serif;
     font-weight: 300;
     font-size: 18px;
