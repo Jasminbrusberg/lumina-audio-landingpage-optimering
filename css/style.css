@@ -653,7 +653,7 @@ background-color: var(--lightbackground-color);
       /* overflow: hidden; viser kun billederne i sektionens bredde. */
       overflow: hidden;
       background-color: var(--lightbackground-color);
-      padding: 40px;
+      padding: 40px 0;
     }
 
      /* styler listen med billederne */
@@ -661,15 +661,18 @@ background-color: var(--lightbackground-color);
     /* list-style: none; fjerner punkterne */
     list-style: none;
     margin: 0;
-    padding: 0 32px 0 0;
+    padding: 0;
+
     display: flex;
-    gap: 32px;
+    gap: 0px;
     /* width: max-content; gør rækken lige så bred som alt indholdet samlet. */
     width: max-content;
     animation: autoScroll 40s linear infinite;
+    /* forberede sig på animationen */
+    will-change: transform;
   }
     /* autoScroll = navnet på animationen */
-    /* 25s = animationen varer 25 sekunder */
+    /* 25s = animationen varer 40 sekunder */
     /* linear = samme hastighed hele vejen */
     /* infinite = den kører uendeligt */
     
@@ -677,6 +680,7 @@ background-color: var(--lightbackground-color);
     /* styler hver liste */
     .img-track li {
     flex: 0 0 auto; /* betyder, at hvert billede beholder sin egen størrelse og ikke bliver mast sammen. */
+    margin-right: 32px;
     }
 
       /* styler alle "figure" */
@@ -700,7 +704,7 @@ background-color: var(--lightbackground-color);
     }
     to {
       /* transform: translateX(-50%); betyder: flyt rækken 50% mod venstre. js kopier billederne derfor undgår vi hak når den flytter 50% og starter forfra*/
-      transform: translateX(-50%);
+       transform: translateX(-50%);
     }
     }
 
