@@ -638,7 +638,21 @@ background-color: var(--lightbackground-color);
     transform: scale(1.08);
   }
 
+  /* styling af hele loop sektionen */
+    .img-loop {
+      /* overflow: hidden; viser kun billederne i sektionens bredde. */
+      overflow: hidden;
+      background-color: var(--lightbackground-color);
+      padding: 40px;
+    }
 
+     /* styler listen med billederne */
+    .img-track {
+    /* list-style: none; fjerner punkterne */
+    list-style: none;
+    margin: 0;
+    padding: 0 32px 0 0;
+    display: flex;
     gap: 32px;
     /* width: max-content; gør rækken lige så bred som alt indholdet samlet. */
     width: max-content;
@@ -654,7 +668,15 @@ background-color: var(--lightbackground-color);
     flex: 0 0 auto; /* betyder, at hvert billede beholder sin egen størrelse og ikke bliver mast sammen. */
     }
 
+      /* styler alle "figure" */
+    .img-track figure {
+      margin: 0;
+    }
 
+    /* styler billederne */
+    .img-track img {
+    height: 360px;
+    width: 360px;
     object-fit: cover;
     display: block;
     }
@@ -662,8 +684,21 @@ background-color: var(--lightbackground-color);
     /* @keyframes laver selve animationen. */
     @keyframes autoScroll {
     from {
+      /* transform: translateX(0); betyder: start på normal position. */
+      transform: translateX(0); 
+    }
+    to {
+      /* transform: translateX(-50%); betyder: flyt rækken 50% mod venstre. js kopier billederne derfor undgår vi hak når den flytter 50% og starter forfra*/
+      transform: translateX(-50%);
+    }
     }
 
+    /* .image-loop = hele sektionen */
+    /* .image-track = rækken der bevæger sig */
+    /* li = hvert billede-punkt */
+    /* figure = semantisk billed-container */
+    /* img = selve billedet */
+    /* @keyframes = animationen */
 
 
 
