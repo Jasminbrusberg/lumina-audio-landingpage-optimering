@@ -297,66 +297,76 @@
     </figure>
  </section>
 
+<!-- product card -->
+<section class="product" aria-label="Produktkort">
+  <figure class="product-left">
+    <img id="product-image" src="img/lumina-beige.png" alt="Lumina One i beige">
+  </figure>
 
+  <article class="product-right">
+    <h4>LUMINA One</h4>
+        <p>
+        Stor lyd og stemning – hvor end du er. LUMINA One leverer 100 dB,
+        18 timers batteri og stemningslys i et let, vandafvisende design
+        med Bluetooth 5.3 og Social Connect.
+        </p>
+   <!-- form = bruges normalt, når brugeren skal vælge eller indtaste noget-->
+  <form class="product-colors" aria-label="Vælg produktfarve">
+    <!-- <fieldset> samler flere valg, der hører sammen. -->
+    <fieldset>
+        <!-- <legend> er overskriften til dit <fieldset>. -->
+      <legend>Vælg farve:</legend>
 
+      <button
+      class="color-option beige active"
+      type="button"
+      aria-label="Vælg beige"
+      data-image="img/lumina-beige.png"
+      data-alt="Lumina One i beige">
+      </button>
 
+      <button
+      class="color-option green active"
+      type="button"
+      aria-label="Vælg grøn"
+      data-image="img/lumina-green.png"
+      data-alt="Lumina One i green">
+      </button>
 
+      <button
+      class="color-option purple active"
+      type="button"
+      aria-label="Vælg lilla"
+      data-image="img/lumina-purple.png"
+      data-alt="Lumina One i lilla">
+      </button>
 
-<!-- delen hvor højtaleren med pris, farver og beskrivelse fremgår -->
-<section class="product">
-  <div class="product-media">
-    <img src="img/hvid_højtaler-removebg-preview.png" width="200px" alt="LUMINA One højttaler">
-  </div>
-
-  <div class="product-info">
-    <h2 class="product-title">
-      Kraftig bærbar<br>
-      Bluetooth højtaler
-    </h2>
-
-    <p class="product-text">
-      Stor lyd og stemning – hvor end du er. LUMINA One leverer 100 dB, 18 timers batteri
-      og stemningslys i et let, vandafvisende design med Bluetooth 5.3 og Social Connect.
-    </p>
-
-    <div class="product-meta">
-      <div class="pris">1499 kr.</div>
-
-      <div class="farver" aria-label="Vælg farve">
-        <button class="swatch" style="--c:#E7B0A8" aria-label="Rose"></button>
-        <button class="swatch" style="--c:#D8D1C5" aria-label="Beige"></button>
-        <button class="swatch" style="--c:#8FA08D" aria-label="Grøn"></button>
-        <button class="swatch" style="--c:#C7B3E6" aria-label="Lilla"></button>
-      </div>
-    </div>
-
-    <button class="add-to-cart">Læg i kurv</button>
-  </div>
+      <button
+      class="color-option pink active"
+      type="button"
+      aria-label="Vælg pink"
+      data-image="img/lumina-pink.png"
+      data-alt="Lumina One i pink">
+      </button>
+    </fieldset>
+  </form>
+        <p class="price">1.499 DKK</p>
+    <nav class="product-actions" aria-label="Produkthandlinger">
+        <a href="#" class="btn-product">Køb nu</a>
+        <a href="#" class="btn-product-secondary">Se specifikationer →</a>
+    </nav>
+  </article>
 </section>
 
 
-<!-- de fire billeder med de 4 forskellige højtalere fremgår -->
 
 
-<section class="variants">
-  <div class="variant-grid">
-    <article class="variant-card">
-      <img src="img/lumina_lyserød-removebg-preview.png" alt="LUMINA One - Rose">
-    </article>
 
-    <article class="variant-card">
-      <img src="img/hvid_højtaler-removebg-preview.png" alt="LUMINA One - Beige">
-    </article>
 
-    <article class="variant-card">
-      <img src="img/grøn_højatler_11-removebg-preview.png" alt="LUMINA One - Grøn">
-    </article>
 
-    <article class="variant-card">
-      <img src="img/lilla (fjernet baggrund).png" alt="LUMINA One - Lilla">
-    </article>
-  </div>
-</section>
+
+
+
 
 
 <main>
