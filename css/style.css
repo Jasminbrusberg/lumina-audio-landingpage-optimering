@@ -442,7 +442,7 @@ background-color: var(--lightbackground-color);
   align-items: center;
   gap: 120px; /* mellemrum mellem tekst og billede */
   padding: 80px 120px;
-  background-color: var(--lightbackground-color);
+  background-color: var(--darkbackground-color);
 }
 
     /* venstre tekstområde */
