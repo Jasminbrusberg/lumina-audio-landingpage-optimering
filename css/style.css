@@ -639,155 +639,37 @@ background-color: var(--lightbackground-color);
   }
 
 
-
-
-
-
-
-
-
-
-
-.product{
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
-  align-items: center;
-  padding: 80px 80px;
-  background: #fff;
-}
-
-/* venstre billede */
-.product-media img{
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* højre kolonne */
-.product-info{
-  max-width: 520px;
-}
-
-.product-title{
-  margin: 0 0 18px;
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-.product-text{
-  margin: 0 0 26px;
-  font-size: 14px;
-  line-height: 1.7;
-  max-width: 430px;
-}
-
-/* linjer + pris + farver */
-
-.product-meta{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
-  padding: 14px 0;
-  margin: 20px 0 28px;
-}
-
-.pris{
-  font-size: 34px;
-  font-weight: 500;
-}
-
-/* farveprikker */
-.farver{
-  display: flex;
-  gap: 14px;
-}
-
-.swatch{
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 2px solid #222;
-  background: var(--c);
-  padding: 0;
-  cursor: pointer;
-}
-
-/* aktiv/hover look */
-.swatch:hover{
-  transform: scale(1.05);
-}
-
-.swatch:focus-visible{
-  outline: 3px solid #000;
-  outline-offset: 3px;
-}
-
-/* knap */
-
-.add-to-cart{
-  width: 100%;
-  height: 64px;
-  border: none;
-  border-radius: 999px;
-  background: #000;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.add-to-cart:hover{
-  opacity: 0.92;
-}
-
-/* mobil */
-@media (max-width: 900px){
-  .product{
-    grid-template-columns: 1fr;
     gap: 32px;
-    padding: 40px 20px;
-  }
-  .product-info{
-    max-width: none;
-  }
- 
-}
+    /* width: max-content; gør rækken lige så bred som alt indholdet samlet. */
+    width: max-content;
+    animation: autoScroll 40s linear infinite;
+    /* autoScroll = navnet på animationen */
+    /* 25s = animationen varer 25 sekunder */
+    /* linear = samme hastighed hele vejen */
+    /* infinite = den kører uendeligt */
+    }
 
+    /* styler hver liste */
+    .img-track li {
+    flex: 0 0 auto; /* betyder, at hvert billede beholder sin egen størrelse og ikke bliver mast sammen. */
+    }
 
-
-
-.variants{
-  padding: 40px 60px 80px;
-  background: #fff;
-}
-
-.variant-grid{
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
 }
 
-/* de lyse “kort” */
-.variant-card{
-  background: #f2f0ed;
-  padding: 36px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    object-fit: cover;
+    display: block;
+    }
 
-/* billederne */
 .variant-card img{
   width: 150%;
   max-width: 260px;   /* styrer størrelsen */
   height: auto;
-  display: block;
-}
+    /* @keyframes laver selve animationen. */
+    @keyframes autoScroll {
+    from {
+    }
 
 /* responsiv */
 @media (max-width: 1100px){
@@ -801,15 +683,10 @@ background-color: var(--lightbackground-color);
 
 
 
-/* Baseline to ignore browsers default settings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 
+    
 
 
 
