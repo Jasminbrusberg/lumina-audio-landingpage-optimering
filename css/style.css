@@ -662,11 +662,12 @@ background-color: var(--lightbackground-color);
     /* width: max-content; gør rækken lige så bred som alt indholdet samlet. */
     width: max-content;
     animation: autoScroll 40s linear infinite;
+  }
     /* autoScroll = navnet på animationen */
     /* 25s = animationen varer 25 sekunder */
     /* linear = samme hastighed hele vejen */
     /* infinite = den kører uendeligt */
-    }
+    
 
     /* styler hver liste */
     .img-track li {
