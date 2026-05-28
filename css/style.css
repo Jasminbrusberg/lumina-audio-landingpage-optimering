@@ -142,6 +142,7 @@ body {
     letter-spacing: 2px;
     text-decoration: none;
     cursor: pointer;
+   
     }
 
     /* gør knappen guld */
@@ -169,8 +170,9 @@ body {
 
   /* styling af ikonernes placering */
    .hero-features {
+    list-style: none;
     position: absolute;
-    bottom: 24px;
+    bottom: 10px;
     left: 60px;
     width: 58%;
 
