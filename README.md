@@ -26,6 +26,9 @@ Brugeren skal kunne se og læse om produktet LUMINA One samt forstå, hvilke mul
 Projektet arbejder med statisk data i HTML, såsom overskrifter, brødtekst, produktinformation, links, anmeldelser og informationer i footeren. Der er også tilføjet interaktive elementer ved brug af JavaScript, eksempelvis på produktkortet og i auto-scroll-sektionen.
 
 ## Fil- og mappestruktur
+![billed af mappe struktur.](/img/mappe-struktur.png "This is a sample image.")
+![billed af åbne mapper.](/img/open-folder.png "This is a sample image.")
+
 ### Hvad indeholder din html-fil?
 Min HTML-fil indeholder selve strukturen og indholdet på hjemmesiden.
 HTML filen er hjemmesidens byggeklodser.
