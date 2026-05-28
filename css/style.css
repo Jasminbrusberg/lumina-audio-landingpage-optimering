@@ -292,7 +292,10 @@ background-color: var(--lightbackground-color);
 
 /* Højre side med anmeldelser */
     .review-area {
-         flex: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     /* Holder anmeldelseskortene ved siden af hinanden */
@@ -366,20 +369,30 @@ background-color: var(--lightbackground-color);
     }
 
     /* Link nederst */
+    .trustpilot-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    }
+
     .trustpilot-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 40px;
-        color: black;
-        text-decoration: none;
-        font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: black;
+    text-decoration: none;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 16px;
     }
 
     /* Trustpilot-logo i linket */
     .trustpilot-link img {
     width: 150px;
+    height: auto;
     }
 
     /* Pil efter linket */
